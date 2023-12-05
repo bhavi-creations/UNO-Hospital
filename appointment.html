@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
-<title>Medicina - Medical HTML Template</title>
+<title>UNO - Super speciality Clinic</title>
 <meta name="author" content="Themezinho">
 <meta name="description" content="Medicina - Medical HTML Template">
 <meta name="keywords" content="html, template, carousel, themezinho, medical, html5">
@@ -70,7 +70,7 @@
         <!-- end col-6 -->
         <div class="col-md-3 col-sm-4 col-xs-7">
           <ul class="language">
-            <li><a href="#"><img src="images/flag-brazil.png" alt="Image">Kakianda</a></li>
+            <li><a href="#" ><i class="fa-solid fa-location-dot fa-lg" style="margin-right: 8px;"></i>Kakinada</a></li>
             <!-- <li><a href="#"><img src="images/flag-england.png" alt="Image">ENGLISH</a></li> -->
           </ul>
           <!-- end language --> 
@@ -140,7 +140,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h1>GALLERY</h1>
+        <h1>APPOINTMENT</h1>
       </div>
     </div>
   </div>
@@ -149,15 +149,45 @@
 <section class="gallery">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 margin-bottom">
-        <h1 class="title-bottom-line"><strong>Schedule an Appointment</strong></h1>
-        <p>To schedule an appointment with one of our specialists, please call our clinic during operating hours or use our online appointment scheduling system on our website..</p>
+
+      <div class="col-xl-8 col-lg-8  col-md-8 col-sm-12 col-xs-12">
+        <div class="left-side">
+          <h1 class="title-bottom-line"><strong>Appointment</strong> Form</h1>
+          <h4>Fix Your Appointment With UNO Superspeciality Clinic</h4>
+          <p>To schedule an appointment with one of our specialists, please call our clinic during operating hours or use our online appointment scheduling system on our website..</p>
+            </p>
+          <form id="contact-form">
+            <input type="text" name="name" id="name" placeholder="Your name">
+            <input type="text" name="surname" id="surname"  placeholder="Surname">
+            <input type="text" name="phone" id="phone" placeholder="Phone">
+            <input type="text" name="email" id="email" placeholder="E-mail">
+            <input type="text" name="city" id="city" placeholder="City">
+            <input type="text" name="state" id="state" placeholder="State">
+            <input type="text" name="subject" id="subject" placeholder="What is your contact reason" class="subject">
+            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+            <input type="submit" name="submit" value="SEND IT">
+          </form>
+          <div id="success">
+            <p>Your message was sent successfully! We will be in touch as soon as we can.</p>
+          </div>
+          <div id="error">
+            <p>Something went wrong, try refreshing and submitting the form again.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-xs-4  col-lg-4  col-md-4 col-sm-12 col-xs-12 margin-bottom">
+        <h1 class="title-bottom-line"><strong>Clinic Hours</strong></h1>
+        <p>Evening</p>
+        <p>06:00 p.m - 09:00 p.m </p>
+        <br>
+        <br>
         <h1 class="title-bottom-line"><strong>Contact Information</strong></h1>
         <p>Phone: +91 8309979799</p>
         <p>Email: unosuperspecialityclinics@gmail.com </p>
-        <h1 class="title-bottom-line"><strong>Clinic Hours</strong></h1>
-        <p>Phone: +91 8309979799</p>
-        <p>Email: unosuperspecialityclinics@gmail.com </p>
+        
       </div>
       <!-- end col-12 -->
     </div>
@@ -167,28 +197,11 @@
     
 </section>
 <!-- end section -->
-<section class="footer-bar">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h2><i class="ion-iphone"></i> 8309979799 </h2>
-        <ul>
-          <!-- <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li> -->
-          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-        </ul>
-        <!-- end ul -->
-        <h4>Follow us on social media</h4>
-      </div>
-      <!-- end col-12 --> 
-    </div>
-    <!-- end row --> 
+<div class="container">
+  <div class="row">
+   
   </div>
-  <!-- end container --> 
-</section>
+</div>
 <!-- end footer-bar -->
 <section class="footer-bar">
   <div class="container">
@@ -255,12 +268,20 @@
         
     </div>
     <!-- end row --> 
-    <br>
-    <p class=" text-center">Copyright © 2014 , Medicina</p>
+     
 
   </div>
   <!-- end container --> 
+  
 </footer>
+<div >
+  <div class=" text-center  foot_pad pt-3">
+      <p class="fotter_end">
+         Copy Rights  © 2023 UNO All Rights Reserved Terms of Use Privacy Policy
+          <a href="https://bhavicreations.com"  target="_blank"><span class="bhavi_creations">Bhavi Creations</span></a>
+      </p>
+  </div>
+</div>
 <!-- end footer -->
 
 <script type='text/javascript' src="js/jquery.min.js"></script> 

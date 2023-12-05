@@ -133,18 +133,17 @@
 
 
 .demo-2 .bg-img-1 {
-	background-image: url(../images/banner3.jpg);
+	background-image: url(../images/slider\ image\ 1.jpg);
 }
 .demo-2 .bg-img-2 {
-	background-image: url(../images/banner2.jpg);
+	background-image: url(../images/slider\ image\ 3.jpg);
 }
 .demo-2 .bg-img-3 {
-	background-image: url(../images/banner4.jpg);
+	background-image: url(../images/slider\ image\ 4.jpg);
 }
 .demo-2 .bg-img-4 {
-	background-image: url(../images/banner.jpg);
+	background-image: url(../images/slider\ image\ 2.jpg);
 }
-
 
 .sl-slider-wrapper { width: 1170px;height: 400px;margin: 0 auto;position: relative;overflow: hidden;}
 .sl-slider {position: absolute;top: 0;left: 0;}

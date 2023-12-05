@@ -190,7 +190,7 @@ ul li{ margin:0; padding:0; list-style-position:inside;}
 
 
 /* Titles */
-.title-bottom-line{ color:#3b2b98; font-weight:300; margin-bottom:0px; padding-bottom:40px; position:relative; border-bottom:1px solid #eee; margin-top:0;}
+.title-bottom-line{ color:#3b2b98; font-weight:200; margin-bottom:0px; padding-bottom:40px; position:relative; border-bottom:1px solid #eee; margin-top:0;}
 .title-bottom-line:after{content:''; width:80px; height:1px; float:left; background:#df0e86; position:absolute; left:0; bottom:-1px;}
 
 
@@ -627,3 +627,10 @@ footer form input[type="submit"]{ margin-top:0; margin-left:8px;}
 .footer-bar h2{ font-size:24px;}
 footer form input[type="text"]{ max-width:220px;}
 footer ul{ margin-bottom:40px;}
+
+.foot_pad{
+    color: white;
+    background-color: #032B3E;
+  height: 70px;
+
+}	
