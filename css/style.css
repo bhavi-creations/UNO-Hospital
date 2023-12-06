@@ -395,7 +395,7 @@ header .navbar{ min-width:100%; height:83px; float:left; margin:0; position:rela
 
 
 /* Gallery */
-.gallery{ width:100%; padding-bottom:30;}	
+.gallery{ width:100%; padding-bottom:25px;}	
 .gallery h2{ font-size:40px; font-weight:700; color:#3b2b98; background:url(../images/title-bg.jpg) center bottom no-repeat; padding-bottom:20px;}
 .gallery h5{ margin-bottom:60px; margin-top:10px; display:inline-block;}
 .gallery .thumb{ width:100%; height:100%; float:left; overflow:hidden; position:relative; border:1px solid #fff; position:relative;}
@@ -592,6 +592,9 @@ footer form{ width:100%; float:left; padding:0; margin-top:30px; margin-bottom:5
 footer form input[type="submit"]{ margin-top:0; margin-left:8px;}
 }
 
+.bod{
+	border-radius: 3px;
+}
 
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
 .top-bar .phone{ font-size:14px;}
@@ -638,6 +641,11 @@ footer form input[type="submit"]{ margin-top:0; margin-left:8px;}
 .footer-bar h2{ font-size:24px;}
 footer form input[type="text"]{ max-width:220px;}
 footer ul{ margin-bottom:40px;}
+
+
+
+
+
 
 .foot_pad{
     color: white;
