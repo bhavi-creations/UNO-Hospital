@@ -653,19 +653,18 @@ footer ul{ margin-bottom:40px;}
   height: 70px;
 
 }	
-
-.marquee {
-	/* white-space: nowrap;
-	overflow: hidden;
-	box-sizing: border-box;
-	animation: marquee 20s linear infinite; */
+.text-center{
+	
+}
+ .marquee{
+ 
 	white-space: nowrap;
       overflow: hidden;
       box-sizing: border-box;
       background-color: pink;
       padding: 10px;
-      animation: marquee 20s linear infinite;
-  }
+	  animation: scrollText 1s linear infinite; /* Adjust the animation duration as needed */
+	}
 
   @keyframes marquee {
 	0%   { transform: translateX(100%); }
@@ -674,5 +673,22 @@ footer ul{ margin-bottom:40px;}
 
   .marquee {
 	background-color: #01a3d4;
-  }
+  } 
 
+.scrolling-text {
+	 overflow: hidden; /*Hide overflowing content */
+  }
+  
+.scrolling-text p {
+	white-space: nowrap; /* Prevent text from breaking into multiple lines */
+	animation: scrollText 15s linear infinite; /* Adjust the animation duration as needed */
+  }
+  
+@keyframes scrollText {
+	from {
+	  transform: translateX(100%); /* Start off-screen to the right */
+	}
+	to {
+	  transform: translateX(-100%); /* Move to the left */
+	}
+	}
