@@ -643,7 +643,7 @@ footer form input[type="text"]{ max-width:220px;}
 footer ul{ margin-bottom:40px;}
 
 
-
+}
 
 
 
@@ -653,25 +653,23 @@ footer ul{ margin-bottom:40px;}
   height: 70px;
 
 }	
-.text-center{
-	
-}
- .marquee{
+ 
+.marquee{
  
 	white-space: nowrap;
       overflow: hidden;
       box-sizing: border-box;
       background-color: pink;
       padding: 10px;
-	  animation: scrollText 1s linear infinite; /* Adjust the animation duration as needed */
-	}
+	  animation: scrollText 15s linear infinite; 
+}
 
-  @keyframes marquee {
+@keyframes marquee {
 	0%   { transform: translateX(100%); }
 	100% { transform: translateX(-100%); }
-  }
+}
 
-  .marquee {
+.marquee {
 	background-color: #01a3d4;
   } 
 
