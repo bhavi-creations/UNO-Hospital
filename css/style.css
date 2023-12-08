@@ -510,7 +510,8 @@ label{ width:100%; float:left; font-size:13px; color:rgb(236, 52, 52);}
 
  
 .bg_colour_foot{
-	background:#01a3d4;
+	background: linear-gradient(to right, #3b2b98, #01a3d4, #df0e86);
+
 }
 .foot_icon{float:left; justify-content: d-flex;}
 .foot_icon ul{ float:right; margin-top:5px; margin-left:30px; padding-left:10px; }
@@ -593,7 +594,11 @@ footer form input[type="submit"]{ margin-top:0; margin-left:8px;}
 }
 
 .bod{
-	border-radius: 3px;
+	margin-top: 35px;
+	border-radius: 10px;
+	margin-bottom: 35px;
+	 
+	width: 200px;
 }
 
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
@@ -654,13 +659,19 @@ footer ul{ margin-bottom:40px;}
 
 }	
  
+.inner-header{
+	 
+	 padding-top: 10px;
+	 margin-bottom: -8px;
+}
+
 .marquee{
  
 	white-space: nowrap;
       overflow: hidden;
       box-sizing: border-box;
       background-color: pink;
-      padding: 10px;
+      padding : 10px;
 	  animation: scrollText 15s linear infinite; 
 }
 
@@ -669,9 +680,9 @@ footer ul{ margin-bottom:40px;}
 	100% { transform: translateX(-100%); }
 }
 
-.marquee {
+/* .marquee {
 	background-color: #01a3d4;
-  } 
+  }  */
 
 .scrolling-text {
 	 overflow: hidden; /*Hide overflowing content */
