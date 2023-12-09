@@ -48,7 +48,7 @@
 </noscript>
  
 </head><body>
-<header>
+  <header  id="main_img">
   <div class="top-bar">
     <div class="container">
       <div class="row">
@@ -108,44 +108,77 @@
   </div>
 </section>
 
- <section class="gallery" style="margin-top: -100px;" id="section1">
+
+
+
+
+
+<section class="appointment_p">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Appointment</h2>
+      </div>
+       <form>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <label>Patient name</label>
+          <input type="text">
+        </div>
+         <div class="col-md-4 col-sm-4 col-xs-12">
+          <label>Phone number</label>
+          <input type="text" id="phone">
+        </div>
+         <div class="col-md-4 col-sm-4 col-xs-12">
+          <label>E-mail</label>
+          <input type="text">
+        </div>
+         <div class="col-xs-12">
+          <hr>
+        </div>
+         <div class="col-md-4 col-sm-6 col-xs-12 date">
+          <label>Select date</label>
+          <input type="text" class="datepicker" data-date-format="mm/dd/yy" placeholder="mm/dd/yy" maxlength="8">
+        </div>
+         <div class="col-md-4 col-sm-6 col-xs-12 department">
+          <label >Department</label>
+          <select>
+            <option>Department</option>
+            <option>UROLOGY</option>
+            <option>NEUROSURGERY</option>
+            <option>ONCOLOGY</option>
+          </select>
+        </div>
+         <div class="col-md-4 col-sm-12 col-xs-12 gender">
+          <input type="radio" name="gender" >
+          <label>Male</label>
+          <input type="radio"name="gender">
+          <label>Female</label>
+          <input type="submit" value="MAKE IT">
+        </div>
+       </form>
+     </div>
+   </div>
+ </section>  
+
+
+
+
+
+
+
+
+
+ <section class="gallery" style="margin-top: -80px;" id="section1">
   <div class="container">
     <div class="row">
 
-      <div class="col-xl-8 col-lg-8  col-md-8 col-sm-12 col-xs-12">
-        <div class="left-side">
-          <h1 class="title-bottom-line"><strong>Appointment</strong> Form</h1>
-          <h4>Fix Your Appointment With UNO Superspeciality Clinic</h4>
-          <p>To schedule an appointment with one of our specialists, please call our clinic during operating hours or use our online appointment scheduling system on our website..</p>
-            </p>
-          <form id="contact-form">
-            <input type="text" name="name" id="name" placeholder="Your name">
-            <input type="text" name="surname" id="surname"  placeholder="Surname">
-            <input type="text" name="phone" id="phone" placeholder="Phone">
-            <input type="text" name="email" id="email" placeholder="E-mail">
-            <input type="text" name="city" id="city" placeholder="City">
-            <input type="text" name="state" id="state" placeholder="State">
-            <input type="text" name="subject" id="subject" placeholder="What is your contact reason" class="subject">
-            <textarea name="message" id="message" placeholder="Your Message"></textarea>
-            <input type="submit" name="submit" value="SEND IT">
-          </form>
-          <div id="success">
-            <p>Your message was sent successfully! We will be in touch as soon as we can.</p>
-          </div>
-          <div id="error">
-            <p>Something went wrong, try refreshing and submitting the form again.</p>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="col-xl-4  col-lg-4  col-md-4 col-sm-12 col-xs-12 margin-bottom">
+      <div class="col-xl-6  col-lg-6  col-md-6 col-sm-12 col-xs-12  ">
         <h1 class="title-bottom-line"><strong>Clinic Hours</strong></h1>
         <p>Evening</p>
         <p>06:00 p.m - 09:00 p.m </p>
-        <br>
-        <br>
+      </div>
+
+      <div class="col-xl-6  col-lg-6  col-md-6 col-sm-12 col-xs-12  ">
         <h1 class="title-bottom-line"><strong>Contact Information</strong></h1>
         <p>Phone: +91 8309979799</p>
         <p>Email: unosuperspecialityclinics@gmail.com </p>
@@ -153,64 +186,151 @@
       </div>
       <!-- end col-12 -->
     </div>
-    
-
-    
-    
+  
 </section>
   
  
+<!-- WhatsApp   -->
+
+<a href="" class="whatsapp-link shadow" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- upper arrow 
+-->
+
+<div class="circle-icon-container">
+<div class="circle-icon">
+<a href="#main_img" class="circle-icon "  ><i class="fas fa-arrow-up"></i></a>
+</div>
+</div>
+
  
-<footer class="bg_colour_foot">
-  <div class="container justify-content-center">
-      <div class="row">
+<footer class="bg_colour_foot " >
+  <div class=" ">
 
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <img src="./images/WhatsApp Image 2023-12-08 at 11.28.30_744908c1.jpg" alt="Image" class="img-fluid mx-auto d-block bod">
+  
+      <div class="container justify-content-center ">
+
+
+          <div class="row">
+            
+                <div class="hidden-sm hidden-xs ">
+                      <div class="  col-md-3 col-sm-6 col-xs-6   ">
+                          <img src="./images/WhatsApp Image 2023-12-08 at 11.28.30_744908c1.jpg" alt="Image" class="img-fluid mx-auto d-block bod">
+                      </div>
+            
+                      <div class="  col-md-3 col-sm-6 col-xs-6   ">
+                          <ul class="text-center ">
+                              <li><h3><strong>Menu</strong></h3></li>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="departments.html">Departments</a></li>
+                              <li><a href="contact-us.html">Contact us</a></li>
+                              <li><a href="appointment.html">Appointment</a></li>
+                          </ul>  
+                      </div>
+            
+                      <div class="  col-md-3 col-sm-6 col-xs-6 ">
+                          <ul class="text-center">
+                              <li><h3><strong>Our Services</strong></h3></li>
+                              <li><a href="urology.html">Urology</a></li>
+                              <li><a href="Neurosurgery.html">Neurosurgery</a></li>
+                              <li><a href="oncology.html">Oncology</a></li>
+                          </ul>
+                      </div>
+
+                      <div class="  col-md-3 col-sm-6 col-xs-6  text-center  ">
+                          <div class="foot_icon ">
+                              <ul class="list-inline text-center">
+                                  <li><h3><strong>Social Media</strong> </h3></li>
+                                  <li><p class="mt-5">
+                                      <a href="https://www.facebook.com/profile.php?id=61554331074293">&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i></a>
+                                      <a href="https://www.instagram.com/unosuperspecialityclinics/">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram"></i></a>
+                                      <a href="https://www.youtube.com/channel/UCi9Sh0usF_y3BI_C7nENAUg">&nbsp;&nbsp;&nbsp; &nbsp;<i class="fa-brands fa-youtube"></i></a>
+                                    </p></li>
+                              </ul>
+                          </div>
+            
+                          <div class="row">
+                              <div class="col-12">
+                                  <ul>
+                                      <li>  <h3> <i class="ion-iphone"></i><strong>&nbsp;&nbsp;8309979799</strong> </h3></li>                    
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+
           </div>
 
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
-              <ul class="text-center ">
-                  <li><h3><strong>Menu</strong></h3></li>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="departments.html">Departments</a></li>
-                  <li><a href="contact-us.html">Contact us</a></li>
-                  <li><a href="appointment.html">Appointment</a></li>
-              </ul>  
+
+          <div class="row">
+
+            <div class="hidden-md visible-sm  visible-xs">
+                <div class="row">
+
+                    <div class="  col-sm-6 col-xs-6   ">
+                        <img src="./images/WhatsApp Image 2023-12-08 at 11.28.30_744908c1.jpg" alt="Image" class="img-fluid mx-auto d-block bod">
+                    </div>
+
+                    <div class="   col-sm-6 col-xs-6 ">
+                        <ul class="text-center">
+                            <li><h3><strong>Our Services</strong></h3></li>
+                            <li><a href="urology.html">Urology</a></li>
+                            <li><a href="Neurosurgery.html">Neurosurgery</a></li>
+                            <li><a href="oncology.html">Oncology</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="   col-sm-6 col-xs-6   ">
+                      <ul class="text-center ">
+                          <li><h3><strong>Menu</strong></h3></li>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="departments.html">Departments</a></li>
+                          <li><a href="contact-us.html">Contact us</a></li>
+                          <li><a href="appointment.html">Appointment</a></li>
+                      </ul>  
+                    </div>
+
+
+                    <div class="  col-sm-6 col-xs-6  text-center  ">
+                        <div class="foot_icon ">
+                            <ul class="list-inline text-center">
+                                <li><h3><strong>Social Media</strong> </h3></li>
+                                <li><p class="mt-5">
+                                    <a href="https://www.facebook.com/profile.php?id=61554331074293">&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/unosuperspecialityclinics/">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCi9Sh0usF_y3BI_C7nENAUg">&nbsp;&nbsp;&nbsp; &nbsp;<i class="fa-brands fa-youtube"></i></a>
+                                  </p></li>
+                            </ul>
+                        </div>
+          
+                        <div class="row">
+                            <div class="col-12">
+                                <ul>
+                                    <li>  <h3> <i class="ion-iphone"></i><strong>&nbsp;&nbsp;8309979799</strong> </h3></li>                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
           </div>
 
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-              <ul class="text-center">
-                  <li><h3><strong>Our Services</strong></h3></li>
-                  <li><a href="urology.html">Urology</a></li>
-                  <li><a href="Neurosurgery.html">Neurosurgery</a></li>
-                  <li><a href="oncology.html">Oncology</a></li>
-              </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-              <div class="foot_icon ">
-                  <ul class="list-inline text-center">
-                      <li><h3><strong>Social Media</strong> </h3></li>
-                      <li><p class="mt-5">
-                          <a href="https://www.facebook.com/profile.php?id=61554331074293">&nbsp;&nbsp;<i class="fa-brands fa-facebook"></i></a>
-                          <a href="https://www.instagram.com/unosuperspecialityclinics/">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram"></i></a>
-                          <a href="https://www.youtube.com/channel/UCi9Sh0usF_y3BI_C7nENAUg">&nbsp;&nbsp;&nbsp; &nbsp;<i class="fa-brands fa-youtube"></i></a>
-                        </p></li>
-                  </ul>
-              </div>
-
-              <div class="row">
-                  <div class="col-12">
-                      <ul>
-                          <li>  <h3> <i class="ion-iphone"></i><strong>&nbsp;&nbsp;8309979799</strong> </h3></li>                    
-                      </ul>
-                  </div>
-              </div>
-          </div>
 
       </div>
+
   </div>
 </footer>
  
