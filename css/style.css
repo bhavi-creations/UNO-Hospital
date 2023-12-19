@@ -960,3 +960,24 @@ footer{
   .span_tag{
 
   }
+  .whatsapp-link {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #25d366;
+	color: #fff;
+	padding: 5px;
+	border-radius: 50%;
+	text-decoration: none;
+	font-size: 24px;
+	text-align: center;
+  }
+
+  ul {
+	list-style-type: square; /* You can also use 'circle' or 'square' */
+	color: #4c4d53; /* Text color for list items */
+  }
+
+  
