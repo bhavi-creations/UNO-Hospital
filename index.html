@@ -45,33 +45,77 @@
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 <noscript>
 <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+<link href="./test.js" rel="stylesheet">
 </noscript>
 
  
 </head>
 
 <body>
-<header  id="main_img">
-  <div class="top-bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-3 col-xs-5">  <span class="phone" > <i class="ion-iphone"></i> 8309979799 </span> </div>
-         <div class="col-md-6 col-sm-5 hidden-xs">
-          <form>
-            <input type="text" placeholder="Type a word to find"  style="border-radius: 25px;">
-            
-          </form>
-         </div>
-         <div class="col-md-3 col-sm-4 col-xs-7">
-          <ul class="language">
-            <li><a href="#" ><i class="fa-solid fa-location-dot fa-lg" style="margin-right: 8px;"></i> Kakinada </a></li>
-           </ul>
+  <header  id="main_img">
+    <div class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-5">  <span class="phone" > <i class="ion-iphone"></i> 8309979799 </span> </div>
+           <div class="col-md-6 col-sm-5 hidden-xs">
+            <form>
+              <input type="text" id="search-input" placeholder="Type a word to find"  onclick="search()" style="border-radius: 25px;">
+              <button type="button" id="search-button" onclick="search()" style="border-radius: 25px; margin:10px; background:#3ED2ECBC;  border-color:#01a3d4; color:white">Search</button>
+            </form>
+           </div>
+           <div class="col-md-3 col-sm-4 col-xs-7">
+            <ul class="language">
+              <li><a href="#" ><i class="fa-solid fa-location-dot fa-lg" style="margin-right: 8px;"></i> Kakinada </a></li>
+             </ul>
+           </div>
          </div>
        </div>
      </div>
-   </div>
+ 
+    <!-- Script for search bar -->
 
+    <script>
+      function search() {
+          var searchTerm = document.getElementById('search-input').value.toLowerCase();
+  
+          // Define your services or keywords for searching
+          var services = ["urology", "neurosurgery", "oncology", "women's health", "cardiology", "pediatrics", "dermatology", "internal medicine", "surgical procedures", "rehabilitation", "health checkup", "wellness programs", "telemedicine", "emergency care", "medical imaging","stapler-circumcision"];
+  
+          // Check if the search term matches any service
+          if (services.includes(searchTerm)) {
+              // Redirect to the corresponding service page
+              switch (searchTerm) {
+                  case "urology":
+                      // Redirect to the Urology page
+                      window.location.href = "/urology.html";
+                      break;
+                  case "neurosurgery":
+                      // Redirect to the Neurosurgery page
+                      window.location.href = "/neurosurgery.html";
+                      break;
+                  case "oncology":
+                      // Redirect to the Oncology page
+                      window.location.href = "/oncology.html";
+                      break;
+                  case "stapler-circumcision":
+                      // Redirect to the specific section within the Urology page
+                      window.location.href = "/urology.html#stapler-circumcision";
+                      break;
+                  default:
+                      console.log('Unexpected service: ' + searchTerm);
+              }
+          } else {
+              // Handle the case where the search term does not match any service
+              console.log('Service not found: ' + searchTerm);
+          }
+  
+          // Clear the search input for better user experience (optional)
+          document.getElementById('search-input').value = '';
+      }
+  </script>
+  
 
+<!-- navbar -->
    <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -95,7 +139,7 @@
           <li><a href="about.html">About Us</a>
           
            </li>
-          <li><a href="departments.html">Departments</a>
+          <li><a href="departments.html" style="margin-left:20px">Departments</a>
             <ul>
               <li><a href="urology.html" style="border-bottom: 1px solid transparent; cursor: pointer;" onmouseover="this.style.borderBottom='3px solid #3b2b98'" onmouseout="this.style.borderBottom='1px solid transparent'">UROLOGY</a></li>
               <li><a href="Neurosurgery.html" style="border-bottom: 1px solid transparent; cursor: pointer;" onmouseover="this.style.borderBottom='3px solid #01a3d4'" onmouseout="this.style.borderBottom='1px solid transparent'">NEUROSURGERY</a></li>

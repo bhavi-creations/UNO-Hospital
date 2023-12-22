@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Clinic Website</title>
+    <style>
+        /* Your styles here */
+    </style>
+</head>
+<body>
+    <header id="main_img">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-5">
+                        <span class="phone"><i class="ion-iphone"></i> 8309979799</span>
+                    </div>
+                    <div class="col-md-6 col-sm-5 hidden-xs">
+                        <form>
+                            <input type="text" id="search-input" placeholder="Type a word to find" onclick="search()" style="border-radius: 25px;">
+                            <button type="button" id="search-button" onclick="search()" style="border-radius: 25px; padding: 8px 16px; font-size: 16px; cursor: pointer;">Search</button>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-7">
+                        <ul class="language">
+                            <li><a href="#"><i class="fa-solid fa-location-dot fa-lg" style="margin-right: 8px;"></i> Kakinada</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Your HTML content here -->
+
+    <!-- Script for search bar -->
+   <!-- Your HTML content here -->
+
+<!-- Script for search bar -->
+<script>
+    function search() {
+        var searchTerm = document.getElementById('search-input').value.toLowerCase();
+
+        // Define your services or keywords for searching
+        var services = ["Stapler Circumcision", "urology", "neurosurgery", "oncology", "women's health", "cardiology", "pediatrics", "dermatology", "internal medicine", "surgical procedures", "rehabilitation", "health checkup", "wellness programs", "telemedicine", "emergency care", "medical imaging"];
+
+        // Check if the search term matches any service
+        if (services.includes(searchTerm)) {
+            // Redirect to the corresponding page with a fragment identifier
+            switch (searchTerm) {
+                case "Stapler Circumcision":
+                    window.location.href = '/urology.html#stapler-circumcision';
+                    break;
+                case "urology":
+                    window.location.href = '/urology.html';
+                    break;
+                case "neurosurgery":
+                    window.location.href = '/neurosurgery.html';
+                    break;
+                // Add cases for other services as needed
+                default:
+                    console.log('Service not found: ' + searchTerm);
+            }
+        } else {
+            // Handle the case where the search term does not match any service
+            console.log('Service not found: ' + searchTerm);
+        }
+
+        // Clear the search input for better user experience (optional)
+        document.getElementById('search-input').value = '';
+    }
+</script>
+
+</body>
+</html>

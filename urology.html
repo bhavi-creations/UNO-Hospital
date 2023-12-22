@@ -55,8 +55,8 @@
           <div class="col-md-3 col-sm-3 col-xs-5">  <span class="phone" > <i class="ion-iphone"></i> 8309979799 </span> </div>
            <div class="col-md-6 col-sm-5 hidden-xs">
             <form>
-              <input type="text" placeholder="Type a word to find"  style="border-radius: 25px;">
-              
+              <input type="text" id="search-input" placeholder="Type a word to find"  onclick="search()" style="border-radius: 25px;">
+              <button type="button" id="search-button" onclick="search()" style="border-radius: 25px; margin:10px; background:#3ED2ECBC;  border-color:#01a3d4; color:white">Search</button>
             </form>
            </div>
            <div class="col-md-3 col-sm-4 col-xs-7">
@@ -67,7 +67,50 @@
          </div>
        </div>
      </div>
+ 
+    <!-- Script for search bar -->
+
+    <script>
+      function search() {
+          var searchTerm = document.getElementById('search-input').value.toLowerCase();
   
+          // Define your services or keywords for searching
+          var services = ["urology", "neurosurgery", "oncology", "women's health", "cardiology", "pediatrics", "dermatology", "internal medicine", "surgical procedures", "rehabilitation", "health checkup", "wellness programs", "telemedicine", "emergency care", "medical imaging","stapler-circumcision"];
+  
+          // Check if the search term matches any service
+          if (services.includes(searchTerm)) {
+              // Redirect to the corresponding service page
+              switch (searchTerm) {
+                  case "urology":
+                      // Redirect to the Urology page
+                      window.location.href = "/urology.html";
+                      break;
+                  case "neurosurgery":
+                      // Redirect to the Neurosurgery page
+                      window.location.href = "/neurosurgery.html";
+                      break;
+                  case "oncology":
+                      // Redirect to the Oncology page
+                      window.location.href = "/oncology.html";
+                      break;
+                  case "stapler-circumcision":
+                      // Redirect to the specific section within the Urology page
+                      window.location.href = "/urology.html#stapler-circumcision";
+                      break;
+                  default:
+                      console.log('Unexpected service: ' + searchTerm);
+              }
+          } else {
+              // Handle the case where the search term does not match any service
+              console.log('Service not found: ' + searchTerm);
+          }
+  
+          // Clear the search input for better user experience (optional)
+          document.getElementById('search-input').value = '';
+      }
+  </script>
+  
+<!-- navbar -->  
   
      <nav class="navbar navbar-default" role="navigation">
       <div class="container">
@@ -582,12 +625,11 @@
   </div>
 </section> -->
 
-<!-- New services -->
 
-<section class="inner-content" style="padding-bottom:0; margin-top: -60px;" >
+<section class="inner-content" style="padding-bottom:0; margin-top: -60px;" id="stapler-circumcision">
   <div class="container">
 
-    <h2 class=" heading_of_h1">Stapler circumcision 
+    <h2 class=" heading_of_h1">Stapler Circumcision 
 
     </h2>
 
@@ -637,7 +679,7 @@
 <section class="inner-content" style="padding-bottom:0; margin-top: -60px;" >
   <div class="container">
 
-    <h2 class=" heading_of_h1">No scalpel vasectomy
+    <h2 class=" heading_of_h1">No Scalpel Vasectomy
     </h2>
 
     <div class="row">
@@ -645,7 +687,7 @@
   
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style=" margin-bottom: 40px">
 
-         <img  class="" src="./images/No scalpel vasectomyN.png" alt="" >
+         <img  class="" src="./images/noscapelupd.png" alt="" >
 
       </div>
 
@@ -799,7 +841,7 @@
 
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-md visible-xs" style=" margin-bottom: 40px">
 
-        <img  class="img-fluid" src="./images/reconUPDA.png" alt="">
+        <img  class="img-fluid" src="./images/reconupd (1).png" alt="">
 
      </div>
 
@@ -832,7 +874,7 @@
 
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-xs " style=" margin-bottom: 40px">
 
-        <img  class="img-fluid" src="./images/reconUPDA.png" alt="" >
+        <img  class="img-fluid" src="./images/reconupd (1).png" alt="" >
 
      </div>
 
@@ -851,7 +893,7 @@
 
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 " style=" margin-bottom: 40px">
 
-        <img  class="img-fluid" src="./images/Renal TransplantationN.png" alt="" >
+        <img  class="img-fluid" src="./images/renelupd.png" alt="" >
 
      </div>
 
@@ -901,7 +943,7 @@
   
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 visible-xs" style=" margin-bottom: 40px">
 
-         <img  class="" src="./images/AV Fistula Access CreationNN.png" alt="">
+         <img  class="" src="./images/Avfitusaupd.png" alt="">
 
       </div>
 
@@ -940,7 +982,7 @@
 
     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-xs" style=" margin-bottom: 40px">
 
-      <img  class="" src="./images/AV Fistula Access CreationNN.png" alt="">
+      <img  class="" src="./images/Avfitusaupd.png" alt="">
 
    </div>
 
