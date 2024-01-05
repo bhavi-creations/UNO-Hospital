@@ -355,7 +355,8 @@ header .navbar { min-width:100%; height:83px; float:left; margin:0; position:rel
 .home-services .content1:hover .icon{ border:15px solid #01a3d4 ;}
 .home-services .content2:hover .icon{ border:15px solid #df0e86 ;}
 .home-services .content:hover img{ margin-top:19px;}
-.home-services .icon{ width:132px; height:132px; background: linear-gradient(to right, #3b2b98, #01a3d4, #df0e86); border:9px solid #d2f6f4; border-radius:132px; }
+/* .home-services .icon{ width:132px; height:132px; background: linear-gradient(to right, #3b2b98, #01a3d4, #df0e86); border:9px solid #d2f6f4; border-radius:132px; } */
+.home-services .icon{ width:132px; height:132px; background:  #01a3d4; border:9px solid #d2f6f4; border-radius:132px; }
 .home-services .icon{display:inline-block; position:relative;}
 .home-services .icon:hover:after{ top:40px;}
 .home-services .icon img{ margin-top:25px;}
@@ -861,7 +862,8 @@ label{ width:100%; float:left; font-size:13px; color:rgb(236, 52, 52);}
 
 @media (min-width:768px) {
 .bg_colour_foot{
-	background: linear-gradient(to right, #3b2b98, #01a3d4, #df0e86);
+	/* background: linear-gradient(to right, #3b2b98, #01a3d4, #df0e86); */
+	background:#01a3d4;
 	width: 100%;
 	text-align: center;
 	/* padding: 40px; */
