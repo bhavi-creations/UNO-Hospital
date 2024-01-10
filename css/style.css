@@ -186,7 +186,7 @@ ul li{ margin:0; padding:0; list-style-position:inside;}
 /* Overlay */
 .overlay{position:relative;}
 .overlay:after{content:''; width:100%; height:100%; float:left; position:absolute; left:0; top:0; opacity:0.8; background:#01a3d4;}
-.queryloader__overlay{font-weight:800; font-size:0px; background-image:url(../images/overlay_logo.png)  ;  background-position:center; background-repeat:no-repeat; ;}
+.queryloader__overlay{font-weight:800; font-size:0px; background-image:url(../images/Untitled_design__9_-removebg-preview.png)  ;  background-position:center; background-repeat:no-repeat; ;}
 
 
 
@@ -877,7 +877,8 @@ footer{
 @media (max-width:768px) {
 	
 .bg_colour_foot{
-	background: linear-gradient(to right, #3b2b98, #01a3d4, #df0e86);
+	/* background: linear-gradient(to right, #3b2b98, #01a3d4, #df0e86); */
+	background: #01a3d4;
 	width: 100%;
 	text-align: center;
 	padding: 2px;
