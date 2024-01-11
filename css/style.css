@@ -985,4 +985,10 @@ footer{
 	color: #4c4d53; /* Text color for list items */
   }
 
+@media(max-width:992) 
+{
+	.media {
+		margin-top:10px;
+	  }
+}
   
