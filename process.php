@@ -1,7 +1,7 @@
 <?php
 
-    $to = "your@domain.com";
-    $from = $_REQUEST['email'];
+    $to = "rameshpilli1428@gmail.com";
+    $from = $_REQUEST['rameshpilli1428@gmail.com'];
     $name = $_REQUEST['name'];
 	$surname = $_REQUEST['surname'];
 	$phone = $_REQUEST['phone'];
