@@ -1,7 +1,7 @@
 <?php
 
-    $to = "rameshpilli1428@gmail.com";
-    $from = $_REQUEST['rameshpilli1428@gmail.com'];
+    $to = "unosuperspecialityclinics@gmail.com";
+    $from = $_REQUEST['unosuperspecialityclinics@gmail.com'];
     $name = $_REQUEST['name'];
 	$surname = $_REQUEST['surname'];
 	$phone = $_REQUEST['phone'];
